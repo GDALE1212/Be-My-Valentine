@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h1 id="question">Will You Be My Valentine?😼</h1>
+
+    <div id="buttons">
+        <button id="yesBtn">Yes😡</button>
+        <button id="noBtn">No😎</button>
+    </div>
+
+   <div id="messageContainer">
+    <!-- Tenor GIF embed -->
+    <div class="tenor-gif-embed" 
+         data-postid="16606050094708454978" 
+         data-share-method="host" 
+         data-aspect-ratio="1.02469" 
+         data-width="100%">
+        <a href="https://tenor.com/view/cat-gif-16606050094708454978">Cat Sticker</a> 
+        from <a href="https://tenor.com/search/cat-stickers">Cat Stickers</a>
+    </div>
+    
+    <!-- Your text message -->
+    <div class="letter"> I can't wait to see you baby!🥰</div>
+</div>
+
+<!-- Tenor script (keep only one copy on the page) -->
+<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+     <button id="backBtn">Cancel</button>
+
+</div>
+
+<script>
+    let yesBtn = document.getElementById("yesBtn");
+    let noBtn = document.getElementById("noBtn");
+    let backBtn = document.getElementById("backBtn");
+    let messageContainer = document.getElementById("messageContainer");
+    let buttonsDiv = document.getElementById("buttons");
+
+    let size = 18;
+
+    noBtn.addEventListener("click", function() {
+        size += 10;
+        yesBtn.style.fontSize = size + "px";
+        yesBtn.style.padding = (size / 1.5) + "px " + (size * 1.5) + "px";
+    });
+
+    yesBtn.addEventListener("click", function() {
+        buttonsDiv.style.display = "none"; // hide Yes/No buttons
+        messageContainer.style.display = "block"; // show message
+        backBtn.style.display = "inline-block"; // show back button
+    });
+
+    backBtn.addEventListener("click", function() {
+        size = 18;
+        yesBtn.style.fontSize = "18px";
+        yesBtn.style.padding = "12px 25px";
+
+        buttonsDiv.style.display = "block"; // show Yes/No again
+        backBtn.style.display = "none"; // hide back button
+        messageContainer.style.display = "none"; // hide message
+    });
+</script>
+
+</body>
+</html>

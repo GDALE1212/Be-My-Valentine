@@ -1,0 +1,80 @@
+ body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom right, #eb8ae6, #bb2e8e);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            background: rgb(255, 255, 255);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.3s ease;
+        }
+
+        #yesBtn {
+            background-color: #ff4d6d;
+            color: white;
+        }
+
+        #noBtn {
+            background-color: #ddd;
+        }
+
+#backBtn {
+    background-color: #999;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 40px;  /* lower on the page */
+    display: none;      /* hidden initially! */
+    transition: 0.3s ease;
+}
+
+.letter {
+    font-weight: bold;
+    color: #6a0dad;
+    margin-top: 15px; /* adds space below the GIF */
+    display: block;   /* ensures margin works properly */
+    font-size: 20px;  /* optional: make it nice and readable */
+    text-align: center;
+}
+
+ #messageContainer {
+    display: none; /* hidden initially */
+    margin-top: 30px;
+    width: 320px;
+    padding: 25px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #e6e0ff; /* soft pastel purple */
+    border-radius: 15px;
+    border: 2px solid #9b59b6; /* deeper purple border */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* subtle shadow */
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6a0dad; /* nice deep purple for text */
+    transition: all 0.3s ease;
+}
